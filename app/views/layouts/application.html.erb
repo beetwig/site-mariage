@@ -14,25 +14,26 @@
     <header class="page-header hidden-xs col-sm-12">
       <h1>Fete de mariage de Paul & Xinyu OLIVIER</h1>
     </header>
-        <div class="container">
-          <div class="row">
-          <section>
-            <div class="col-sm-3">
-              <%=render "shared/navbar" %>
-            </div>
-            <div class="tab-content col-sm-9">
-              <div class="tab-pane active in box-section" id="accueil">
-              <%= yield %>
-              </div>
-            </div>
-          </section>
+    <div class="container">
+      <div class="row">
+      <section>
+        <div class="col-sm-3">
+          <%=render "shared/navbar" %>
+        </div>
+        <div class="tab-content col-sm-9">
+          <div class="tab-pane active in box-section " id="accueil">
+            <section  class="tab-section">
+            <%= yield %>
+            </section>
           </div>
         </div>
-        <div class="row">
-          <footer class="footer col-xs-12">
-            <p style="text-align:center;">Copyright 2016- Paul & Xinyu production -</p>
-          </footer>
-        </div>
+      </section>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p style="text-align:center;">Copyright 2016 - Paul & Xinyu production -</p>
+    </footer>
 
     <%= javascript_include_tag 'application' %>
   </body>

@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   def album
+    @images = Dir.glob("app/assets/images/album/*.jpg")
   end
   def contacts
   end

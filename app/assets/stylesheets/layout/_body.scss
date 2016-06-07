@@ -19,11 +19,6 @@ header{
   padding:0.1em;
 }
 
-figure{
-  width: 60%;
-  margin:auto;
-}
-
 .tab-section{
   background: rgba(255,255,255,0.95);
   border: 1px solid #dedede;
@@ -43,14 +38,7 @@ figure{
     position: relative;
 }
 
-#imgAccueil{
-  width: 100%;
-  /*margin: auto;*/
-}
-figcaption{
-  width: 100%;
-  text-align: center;
-}
+
 
 /*#welcomeTxt{
   display: flex;
