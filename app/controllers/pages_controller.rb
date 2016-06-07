@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
   def album
-    @images = Dir.glob("app/assets/images/album/*.jpg")
+    @images_mariage = Dir.glob("app/assets/images/album/mariage/*.jpg")
+    @images_chine = Dir.glob("app/assets/images/album/chine/*.jpg")
   end
   def contacts
   end

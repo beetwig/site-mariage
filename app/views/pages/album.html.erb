@@ -1,5 +1,44 @@
-<h1>Album html erb</h1>
+<h1>Album photo</h1>
+<div class="container"  style="width: 100%;">
+<h3>Mariage à la Mairie de Verlus</h3>
+  <div class="row">
+    <% @images_mariage.each do |image| %>
+    <figure class="col-lg-2 col-md-3 col-sm-4 col-xs-6" >
+      <a href="#" class="thumbnail" style="height: 110px; width:110px;" >
+          <img  style="height: 100%;" class="img-responsive" src=<%= image_path "album/mariage/#{image.split('/').last}" %> >
+      </a>
+    </figure>
+    <% end %>
+  </div>
+  <h3>Mariage en Chine</h3>
+  <div class="row">
+    <% @images_chine.each do |image| %>
+    <figure class="col-lg-2 col-md-3 col-sm-4 col-xs-6" >
+      <a href="#" class="thumbnail" style="height: 110px; width:110px;" >
+          <img  style="height: 100%;" class="img-responsive" src=<%= image_path "album/chine/#{image.split('/').last}" %> >
+      </a>
+    </figure>
+    <% end %>
+  </div>
+</div>
+<div class="modal fade" role="dialog" id="img_modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="" alt="" id="model_img" height="100%" width="100%">
+      </div>
+    </div>
+  </div>
+</div>
+<script src="http://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
- <% @images.each do |image| %>
-   <%= image_tag "slide/#{image.split('/').last}" %>
- <% end %>
+<script>
+  $(window).load(function(){
+    $('img').on('click', function(){
+      var src = $(this).attr('src');
+      $('#model_img').attr('src',src);
+      $('#img_modal').modal('show');
+    });
+  });
+</script>
