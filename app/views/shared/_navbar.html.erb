@@ -12,13 +12,28 @@
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse  navbar-ex1-collapse" >
     <ul class="nav nav-pills nav-stacked">
-      <li class="active"><a href="#accueil" data-toggle="tab">
+      <li class="active">
+      <%= link_to home_path do %>
+        <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+        Accueil
+      <% end %>
+      <!--
+      <a href="#accueil" data-toggle="tab">
         <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
         Accueil</a>
+      -->
       </li>
-      <li><a href="#programme" data-toggle="tab">
+
+      <li>
+        <%= link_to place_path do %>
+          <span class="glyphicon glyphicon-glass" aria-hidden="true"></span>
+        Lieux
+        <% end %>
+        <!--
+        <a href="#programme" data-toggle="tab">
         <span class="glyphicon glyphicon-glass" aria-hidden="true"></span>
         Programme</a>
+        -->
       </li>
       <li><a href="#hotel" data-toggle="tab">
         <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
