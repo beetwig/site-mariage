@@ -1,50 +1,4 @@
-body {
-  color:black;
-  background:white;
-  margin:0;
-  padding:0;
-  background: url(asset-path("bg4.jpg")) no-repeat top fixed;
- /*background-image: image-url("bg4.jpg");
-  /*background: url('assets/bg4.jpg') no-repeat top fixed;
-  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-  background-size: cover; /* version standardisée */
-}
-
-header{
-  width: 80%;
-  min-width: 400px;
-  color: rgba(255,255,255,0.8);
-  text-align: center;
-  font-size: 1.3 em;
-  padding:0.1em;
-}
-
-.tab-section{
-  background: rgba(255,255,255,0.95);
-  border: 1px solid #dedede;
-  padding: 15px;
-  position: relative;
-  width: 100%;
-}
-
-#navbar {
-  background: rgba(255,255,255,0.9);
-}
-
-.box-section {
-    background: rgba(255,255,255,0.95);
-    border: 1px solid #dedede;
-    padding: 15px;
-    position: relative;
-}
-
-
-
-/*#welcomeTxt{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}*/
+/* Depressiated cf. _body.scss*/
 
 .product {
   display: flex;
@@ -134,4 +88,3 @@ header{
 .product:hover .product-upvote { transform: scale(1.2) }
 .product:hover .product-controls-hidden a { color: #E6E6E6 }
 .product-upvote:hover .product-arrow { border-bottom: 9px solid #5898f1 }
-
